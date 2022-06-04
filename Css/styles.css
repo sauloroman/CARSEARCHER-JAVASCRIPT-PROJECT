@@ -1,0 +1,133 @@
+/* GENERALES DEL PROYECTO */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 130rem;
+  max-width: 90%;
+}
+
+.contenedor-principal {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 1.1rem;
+  margin: 3rem 0 5rem 0;
+  padding: 5rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 3.2rem;
+  padding-bottom: 3.2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+
+.campos-busqueda {
+  padding: 2rem;
+}
+
+.texto-busqueda {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.campo label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.campo select {
+  padding: 1rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 1.1rem;
+  width: 100%;
+}
+
+.resultados {
+  height: 70rem;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.contenedor-autos {
+  height: auto;
+  padding: 3rem;
+}
+
+/* FOOTER */
+.footer {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer small,
+.footer cite {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: normal;
+}

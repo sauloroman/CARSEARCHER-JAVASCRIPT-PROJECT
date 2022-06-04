@@ -1,0 +1,55 @@
+/* ESTILOS PARA LOS AUTOS QUE SE MUESTRAN */
+.auto {
+  display: flex;
+  gap: 3rem;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+
+.auto:last-child {
+  border: none;
+}
+
+.auto__imagen {
+  width: 30rem;
+  border: 1px solid #d9d9d9;
+}
+
+.auto__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.auto__info p {
+  font-weight: bold;
+}
+
+.auto__info p span {
+  font-weight: normal;
+}
+
+.auto__info .auto-precio {
+  grid-column: 1 / -1;
+  justify-self: end;
+}
+
+.auto__info .auto-precio span {
+  color: #7f7fd5;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+}
+
+/* Estilos del mensaje */
+.mensaje {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3rem;
+  margin: 3rem 0;
+  color: #fff;
+  background-color: #ea2027;
+}

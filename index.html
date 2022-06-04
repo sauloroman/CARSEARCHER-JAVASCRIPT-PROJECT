@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Busqueda de vehículos por filtración de campos"
+    />
+    <meta name="keywords" content="vehículos, busqueda, resultados" />
+    <meta name="author" content="Saulo Román Santillán Nava" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FUENTES DEL PROYECTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ESTILOS DEL PROYECTO -->
+    <link rel="preload" href="/Css/styles.css" as="style" />
+    <link rel="stylesheet" href="/Css/styles.css" />
+    <link rel="preload" href="/Css/app.css" as="style" />
+    <link rel="stylesheet" href="/Css/app.css" />
+    <link rel="preload" href="/Css/responsive.css" as="style">
+    <link rel="stylesheet" href="/Css/responsive.css">
+
+    <link rel="icon" type="image/png" href="/Images/favicon.png" size="16x16" />
+    <title>Busqueda de vehículos</title>
+  </head>
+  <body>
+    <main class="contenedor">
+      <div class="contenedor-principal">
+        <h1>Busca tu auto ideal 🚗</h1>
+
+        <div class="contenedor-grid">
+          <form class="campos-busqueda">
+            <p class="texto-busqueda">Inicia tu busqueda y encuentra el auto de tus sueños</p>
+
+            <div class="campos">
+              <div class="campo">
+                <label for="marca">Marca</label>
+                <select id="marca">
+                  <option></option>
+                  <option value="Audi">Audi</option>
+                  <option value="BMW">BMW</option>
+                  <option value="Ford">Ford</option>
+                  <option value="MercedesBenz">Mercedes Benz</option>
+                  <option value="Chevrolet">Chevrolet</option>
+                  <option value="Dodge">Dodge</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="year">Año</label>
+                <select id="year">
+                  <option></option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="minimo">Precio Mínimo</label>
+                <select id="minimo">
+                  <option></option>
+                  <option value="20000">20000</option>
+                  <option value="30000">30000</option>
+                  <option value="40000">40000</option>
+                  <option value="50000">50000</option>
+                  <option value="60000">60000</option>
+                  <option value="70000">70000</option>
+                  <option value="80000">80000</option>
+                  <option value="90000">90000</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="maximo">Precio Máximo</label>
+                <select id="maximo">
+                  <option></option>
+                  <option value="20000">20000</option>
+                  <option value="30000">30000</option>
+                  <option value="40000">40000</option>
+                  <option value="50000">50000</option>
+                  <option value="60000">60000</option>
+                  <option value="70000">70000</option>
+                  <option value="80000">80000</option>
+                  <option value="90000">90000</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="transmision">Transmisión</label>
+                <select id="transmision">
+                  <option></option>
+                  <option value="manual">Manual</option>
+                  <option value="automatico">Automatico</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="puertas">Puertas</label>
+                <select id="puertas">
+                  <option></option>
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="color">Color</label>
+                <select id="color">
+                  <option></option>
+                  <option value="Negro">Negro</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Blanco">Blanco</option>
+                  <option value="Rojo">Rojo</option>
+                </select>
+              </div>
+            </div>
+          </form>
+
+          <div>
+            <h2>Tus resultados</h2>
+            <div class="resultados">
+              <div id="contenedorAutos" class="contenedor-autos">
+               
+                <!-- AQUI SE INSERTAN LOS AUTOS -->
+
+            </div>
+            <!-- .RESULTADOS -->
+          </div>
+        </div>
+        <!-- .CONTENEDOR-GRID -->
+      </div>
+      <!-- .CONTENEDOR-PRINCIPAL -->
+    </main>
+    <!-- .CONTENEDOR -->
+
+    <div class="footer">
+      <div class="contenedor contenedor-footer">
+        <cite>Saulo Román Santillán Nava</cite>
+        <small id="anioActual">Todos los derechos reservados &copy;
+          <span></span>
+        </small>
+      </div>
+    </div>
+
+    <script src="bd.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
